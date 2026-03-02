@@ -7,14 +7,12 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![Made with Bash](https://img.shields.io/badge/made%20with-bash-1f425f.svg?style=for-the-badge&logo=gnu-bash)](https://www.gnu.org/software/bash/)
 [![Stars](https://img.shields.io/github/stars/code-wiki/vertex-cli?style=for-the-badge&logo=github)](https://github.com/code-wiki/vertex-cli/stargazers)
-
-<div align="center">
+  
 ```ascii
-┌─────────────────────────────────────────────────────────┐
-│  Claude • Gemini • OpenAI — All in your terminal        │
-└─────────────────────────────────────────────────────────┘
+                                ┌─────────────────────────────────────────────────────────┐
+                                │  Claude • Gemini • OpenAI — All in your terminal        │
+                                └─────────────────────────────────────────────────────────┘
 ```
-</div>
 
 [Quick Start](#-quick-start) • [Installation](#-installation) • [Features](#-features) • [Docs](#-documentation)
 
@@ -28,7 +26,7 @@
 
 <br>
 
-<div align="center">
+<div align="left">
 
 ### ⚡ Three Commands. That's All.
 
@@ -42,7 +40,7 @@ git clone https://github.com/code-wiki/vertex-cli.git && cd vertex-cli
 
 <br>
 
-<div align="center">
+<div align="left">
 
 ## ✨ Features
 
