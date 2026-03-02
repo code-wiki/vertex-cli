@@ -78,17 +78,18 @@ Your data stays in your GCP project when using Vertex AI. Full control, full tra
 git clone https://github.com/code-wiki/vertex-cli.git
 cd vertex-cli
 
-# Run automated setup
-./setup.sh
+# Quick start (from repo)
+./vertex-cli
 
-# Configure your AI provider
-./enable-ai.sh
+# Or install system-wide
+make install
+vertex-cli
 ```
 
 ### First Conversation
 
 ```bash
-./chat.sh
+./bin/vertex-chat
 ```
 
 ```
@@ -237,7 +238,11 @@ gcloud services enable aiplatform.googleapis.com
 ### Step 1: Launch Configuration
 
 ```bash
-./enable-ai.sh
+# From repo
+./vertex-cli
+
+# Or if installed
+vertex-cli
 ```
 
 You'll see the interactive menu:
@@ -328,7 +333,11 @@ gpt-3.5-turbo
 ### Step 3: Start Chatting
 
 ```bash
-./chat.sh
+# From repo
+./bin/vertex-chat
+
+# Or if installed
+vertex-chat
 ```
 
 ---
@@ -421,7 +430,7 @@ Vertex CLI auto-detects GCP Compute Engine VMs and uses service account authenti
 
 ```bash
 # On GCP VM - automatic authentication
-./enable-ai.sh
+vertex-cli
 ```
 
 ---
@@ -491,12 +500,13 @@ gcloud projects add-iam-policy-binding YOUR_PROJECT_ID \
 
 | Document | Description |
 |----------|-------------|
-| [Quick Start](QUICKSTART.md) | Get started in 5 minutes |
-| [Installation](INSTALL.md) | Detailed setup instructions |
-| [Examples](EXAMPLES.md) | Real-world usage examples |
-| [Contributing](CONTRIBUTING.md) | How to contribute |
-| [Security](SECURITY.md) | Security best practices |
-| [Changelog](CHANGELOG.md) | Version history |
+| [Quick Start](docs/QUICKSTART.md) | Get started in 5 minutes |
+| [Installation](docs/INSTALL.md) | Detailed setup instructions |
+| [Examples](docs/EXAMPLES.md) | Real-world usage examples |
+| [Architecture](docs/ARCHITECTURE.md) | System architecture |
+| [Contributing](docs/CONTRIBUTING.md) | How to contribute |
+| [Security](docs/SECURITY.md) | Security best practices |
+| [Changelog](docs/CHANGELOG.md) | Version history |
 
 ---
 
@@ -566,7 +576,7 @@ AI: Think of Docker containers as lightweight, portable boxes:
     • Easy deployment (ship the container)
 ```
 
-More examples in [EXAMPLES.md](EXAMPLES.md)
+More examples in [EXAMPLES.md](docs/EXAMPLES.md)
 
 ---
 
@@ -576,7 +586,7 @@ We love contributions! Here's how you can help:
 
 1. 🐛 **Report bugs** via [GitHub Issues](https://github.com/code-wiki/vertex-cli/issues)
 2. 💡 **Suggest features** via [GitHub Issues](https://github.com/code-wiki/vertex-cli/issues/new)
-3. 🔧 **Submit PRs** - see [CONTRIBUTING.md](CONTRIBUTING.md)
+3. 🔧 **Submit PRs** - see [CONTRIBUTING.md](docs/CONTRIBUTING.md)
 4. ⭐ **Star the repo** if you find it useful!
 5. 📢 **Share** with your network
 
@@ -600,7 +610,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 [![Follow @code-wiki](https://img.shields.io/github/followers/code-wiki?label=Follow&style=social)](https://github.com/code-wiki)
 
 **Get Help:**
-- 📖 [Read the docs](QUICKSTART.md)
+- 📖 [Read the docs](docs/QUICKSTART.md)
 - 🐛 [Report a bug](https://github.com/code-wiki/vertex-cli/issues)
 - 💬 [Ask a question](https://github.com/code-wiki/vertex-cli/issues/new)
 - 🌟 [Star the repo](https://github.com/code-wiki/vertex-cli)
@@ -613,7 +623,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 **Built with ❤️ by developers, for developers**
 
-[🏠 Home](https://github.com/code-wiki/vertex-cli) • [📖 Docs](QUICKSTART.md) • [💡 Examples](EXAMPLES.md) • [🤝 Contribute](CONTRIBUTING.md)
+[🏠 Home](https://github.com/code-wiki/vertex-cli) • [📖 Docs](docs/QUICKSTART.md) • [💡 Examples](docs/EXAMPLES.md) • [🤝 Contribute](docs/CONTRIBUTING.md)
 
 </div>
 

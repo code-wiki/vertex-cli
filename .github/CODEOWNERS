@@ -1,0 +1,14 @@
+# Code owners for Vertex CLI
+# These owners will be requested for review when someone opens a pull request
+
+* @code-wiki
+
+# Documentation
+*.md @code-wiki
+docs/ @code-wiki
+
+# Scripts
+bin/ @code-wiki
+
+# GitHub workflows
+.github/ @code-wiki

@@ -1,4 +1,4 @@
-# AI Tools Configuration (contains sensitive data)
+# Configuration (contains sensitive data)
 .ai-tools-config
 *-config
 *.key
@@ -14,10 +14,16 @@ service-account.json
 .DS_Store
 .AppleDouble
 .LSOverride
+._*
 
 # Linux
 *~
 .directory
+.Trash-*
+
+# Windows
+Thumbs.db
+Desktop.ini
 
 # Logs
 *.log
@@ -35,7 +41,25 @@ temp/
 *.swp
 *.swo
 *.swn
+*.sublime-*
 
 # Backup files
 *.bak
 *.backup
+
+# Node (if adding web interface later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if adding Python scripts later)
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Testing
+coverage/
+.coverage
