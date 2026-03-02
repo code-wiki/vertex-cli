@@ -6,7 +6,7 @@ Get started with GCP AI Tools Runner in 5 minutes!
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/yourusername/gcp-ai-tools-runner.git
+git clone https://github.com/code-wiki/gcp-ai-tools-runner.git
 cd gcp-ai-tools-runner
 
 # 2. Run setup
@@ -65,7 +65,7 @@ gcloud services enable aiplatform.googleapis.com
 
 ```bash
 # Clone
-git clone https://github.com/yourusername/gcp-ai-tools-runner.git
+git clone https://github.com/code-wiki/gcp-ai-tools-runner.git
 cd gcp-ai-tools-runner
 
 # Run automated setup
@@ -169,9 +169,9 @@ chmod +x enable-ai.sh chat.sh setup.sh
 ## Need Help?
 
 - 📖 Read the [full documentation](README.md)
-- 🐛 [Report bugs](https://github.com/yourusername/gcp-ai-tools-runner/issues)
-- 💡 [Request features](https://github.com/yourusername/gcp-ai-tools-runner/issues/new)
-- ⭐ [Star the repo](https://github.com/yourusername/gcp-ai-tools-runner) if you find it useful!
+- 🐛 [Report bugs](https://github.com/code-wiki/gcp-ai-tools-runner/issues)
+- 💡 [Request features](https://github.com/code-wiki/gcp-ai-tools-runner/issues/new)
+- ⭐ [Star the repo](https://github.com/code-wiki/gcp-ai-tools-runner) if you find it useful!
 
 ---
 

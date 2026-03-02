@@ -81,7 +81,7 @@ Complete installation guide for GCP AI Tools Runner.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/gcp-ai-tools-runner.git
+git clone https://github.com/code-wiki/gcp-ai-tools-runner.git
 cd gcp-ai-tools-runner
 
 # Make scripts executable
@@ -97,10 +97,10 @@ chmod +x enable-ai.sh chat.sh
 
 ```bash
 # Using HTTPS
-git clone https://github.com/yourusername/gcp-ai-tools-runner.git
+git clone https://github.com/code-wiki/gcp-ai-tools-runner.git
 
 # Or using SSH
-git clone git@github.com:yourusername/gcp-ai-tools-runner.git
+git clone git@github.com:code-wiki/gcp-ai-tools-runner.git
 
 cd gcp-ai-tools-runner
 ```
@@ -201,7 +201,7 @@ sudo apt-get update
 sudo apt-get install -y git jq
 
 # Clone repository
-git clone https://github.com/yourusername/gcp-ai-tools-runner.git
+git clone https://github.com/code-wiki/gcp-ai-tools-runner.git
 cd gcp-ai-tools-runner
 
 # Make scripts executable
@@ -275,7 +275,7 @@ gcloud config set project YOUR_PROJECT_ID
 ### Getting Help
 
 If you encounter issues:
-1. Check the [GitHub Issues](https://github.com/yourusername/gcp-ai-tools-runner/issues)
+1. Check the [GitHub Issues](https://github.com/code-wiki/gcp-ai-tools-runner/issues)
 2. Review [SECURITY.md](SECURITY.md) for security-related issues
 3. Create a new issue with:
    - Your OS and version
@@ -308,4 +308,4 @@ gcloud auth revoke
 
 ---
 
-**Need more help?** Open an issue on [GitHub](https://github.com/yourusername/gcp-ai-tools-runner/issues)
+**Need more help?** Open an issue on [GitHub](https://github.com/code-wiki/gcp-ai-tools-runner/issues)

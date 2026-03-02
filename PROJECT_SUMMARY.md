@@ -115,7 +115,7 @@ git push -u origin main
 ```bash
 # Replace placeholder URLs with your actual GitHub username
 # In all .md files
-find . -name "*.md" -type f -exec sed -i '' 's/yourusername/YOUR_ACTUAL_USERNAME/g' {} +
+find . -name "*.md" -type f -exec sed -i '' 's/code-wiki/YOUR_ACTUAL_USERNAME/g' {} +
 
 # Commit changes
 git add .
