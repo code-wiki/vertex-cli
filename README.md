@@ -1,125 +1,174 @@
 <div align="center">
 
-<h1>
-  <img src="https://raw.githubusercontent.com/code-wiki/vertex-cli/main/assets/logo.svg" alt="Vertex CLI" width="80" height="80" />
-  <br/>
-  Vertex CLI
-</h1>
+# 🔮 Vertex CLI
 
-<p align="center">
-  <strong>One interface. Three AI giants. Infinite possibilities.</strong>
-</p>
+**One interface. All your AI coding assistants.**
 
-<p align="center">
-  <a href="#quick-start">Quick Start</a> ·
-  <a href="#installation">Installation</a> ·
-  <a href="#documentation">Documentation</a> ·
-  <a href="#examples">Examples</a>
-</p>
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![Made with Bash](https://img.shields.io/badge/made%20with-bash-1f425f.svg?style=for-the-badge&logo=gnu-bash)](https://www.gnu.org/software/bash/)
+[![Stars](https://img.shields.io/github/stars/code-wiki/vertex-cli?style=for-the-badge&logo=github)](https://github.com/code-wiki/vertex-cli/stargazers)
 
-<p align="center">
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
-  <a href="https://www.gnu.org/software/bash/"><img src="https://img.shields.io/badge/Made%20with-Bash-1f425f.svg?style=flat-square" alt="Bash"></a>
-  <a href="https://github.com/code-wiki/vertex-cli/stargazers"><img src="https://img.shields.io/github/stars/code-wiki/vertex-cli?style=flat-square" alt="Stars"></a>
-</p>
+```ascii
+┌─────────────────────────────────────────────────────────┐
+│  Claude • Gemini • OpenAI — All in your terminal       │
+└─────────────────────────────────────────────────────────┘
+```
 
-<br/>
+[Quick Start](#-quick-start) • [Installation](#-installation) • [Features](#-features) • [Docs](#-documentation)
 
 </div>
 
-## What is Vertex CLI?
+<br>
 
-A unified command-line interface for accessing **Claude**, **Gemini**, and **OpenAI** from your terminal. Stop juggling between different tools, APIs, and configurations.
+## 🎯 What is this?
 
-<br/>
+**Vertex CLI** is a unified terminal interface for AI coding assistants. Stop juggling between Claude, Gemini, and OpenAI — access all three from one simple CLI.
+
+<br>
 
 <div align="center">
 
-### Why Use This?
+### ⚡ Three Commands. That's All.
+
+</div>
+
+```bash
+git clone https://github.com/code-wiki/vertex-cli.git && cd vertex-cli
+./vertex-cli        # Configure your AI provider
+./bin/vertex-chat   # Start coding with AI
+```
+
+<br>
+
+<div align="center">
+
+## ✨ Features
 
 </div>
 
 <table>
+<tbody>
 <tr>
-<td align="center" width="33%">
-<img src="https://via.placeholder.com/60/4A90E2/FFFFFF?text=⚡" width="60" alt="Fast"/>
-<br/><br/>
-<strong>Blazing Fast</strong>
-<br/><br/>
-Configure once, use forever.<br/>No browser, no GUI.
+<td align="center" width="25%">
+<br>
+<h3>🤖</h3>
+<b>Multi-Provider</b>
+<br><br>
+Claude, Gemini, OpenAI
+<br>
+in one tool
+<br><br>
 </td>
-<td align="center" width="33%">
-<img src="https://via.placeholder.com/60/7ED321/FFFFFF?text=🔄" width="60" alt="Unified"/>
-<br/><br/>
-<strong>Unified Interface</strong>
-<br/><br/>
-One CLI for all providers.<br/>Seamless switching.
+<td align="center" width="25%">
+<br>
+<h3>⚙️</h3>
+<b>Auto-Config</b>
+<br><br>
+Interactive setup
+<br>
+wizard
+<br><br>
 </td>
-<td align="center" width="33%">
-<img src="https://via.placeholder.com/60/F5A623/FFFFFF?text=🎯" width="60" alt="Simple"/>
-<br/><br/>
-<strong>Dead Simple</strong>
-<br/><br/>
-Three commands to start.<br/>That's it.
+<td align="center" width="25%">
+<br>
+<h3>💾</h3>
+<b>Persistent</b>
+<br><br>
+Configure once
+<br>
+use forever
+<br><br>
+</td>
+<td align="center" width="25%">
+<br>
+<h3>🔐</h3>
+<b>Secure</b>
+<br><br>
+Keys stored safely
+<br>
+never exposed
+<br><br>
 </td>
 </tr>
+</tbody>
 </table>
 
-<br/>
+<br>
 
----
+## 🚀 Quick Start
 
-<br/>
-
-## Quick Start
-
-<div align="center">
+### Step 1: Get the Code
 
 ```bash
-# Clone
-git clone https://github.com/code-wiki/vertex-cli.git && cd vertex-cli
+git clone https://github.com/code-wiki/vertex-cli.git
+cd vertex-cli
+```
 
-# Configure
+### Step 2: Configure
+
+```bash
 ./vertex-cli
+```
 
-# Start chatting
+<details>
+<summary><b>📋 What you'll see...</b></summary>
+<br>
+
+```
+================================
+   AI Tools Configuration
+================================
+
+1) Configure Claude (Vertex AI)
+2) Configure Gemini (Vertex AI)
+3) Configure OpenAI
+4) Show current configuration
+5) Test configuration
+6) Launch AI chat interface
+7) Exit
+```
+
+</details>
+
+### Step 3: Start Chatting
+
+```bash
 ./bin/vertex-chat
 ```
 
-</div>
+<details>
+<summary><b>💬 Example conversation...</b></summary>
+<br>
 
-<br/>
+```python
+You: Write a function to reverse a linked list
 
-**That's literally it.** You're now coding with AI.
+AI: Here's an efficient iterative solution:
 
-<br/>
+def reverse_linked_list(head):
+    prev = None
+    current = head
 
----
+    while current:
+        next_node = current.next
+        current.next = prev
+        prev = current
+        current = next_node
 
-<br/>
+    return prev
 
-## Features
+# Time: O(n), Space: O(1)
+```
 
-<div align="center">
+</details>
 
-| | |
-|:---:|:---|
-| **🤖** | **Multi-Provider** — Claude, Gemini, OpenAI in one tool |
-| **⚙️** | **Auto-Configuration** — Interactive setup wizard |
-| **💾** | **Persistent Settings** — Configure once, use everywhere |
-| **☁️** | **Cloud Ready** — Works on local machines and GCP VMs |
-| **🔐** | **Secure** — API keys stored safely, never exposed |
-| **🎨** | **Customizable** — Use any model, any region |
+<br>
 
-</div>
+## 📦 Installation
 
-<br/>
-
----
-
-<br/>
-
-## Installation
+<table>
+<tr>
+<td width="50%">
 
 ### Option 1: Run Directly
 
@@ -129,142 +178,76 @@ cd vertex-cli
 ./vertex-cli
 ```
 
+No installation needed. Just run.
+
+</td>
+<td width="50%">
+
 ### Option 2: Install Globally
 
 ```bash
 make install
-vertex-cli  # Available system-wide
 ```
 
-<br/>
-
----
-
-<br/>
-
-## Usage
-
-<div align="center">
-
-### Configure Your Provider
-
-</div>
+Then use anywhere:
 
 ```bash
 vertex-cli
-```
-
-<div align="center">
-
-Choose from the menu:
-
-</div>
-
-```
-1) Configure Claude (Vertex AI)
-2) Configure Gemini (Vertex AI)
-3) Configure OpenAI
-```
-
-<br/>
-
-<div align="center">
-
-### Start Coding with AI
-
-</div>
-
-```bash
 vertex-chat
 ```
 
-<div align="center">
+</td>
+</tr>
+</table>
 
-**Example conversation:**
+<br>
 
-</div>
+## 🔧 Prerequisites
 
-```python
-You: Write a function to merge two sorted arrays
+<table>
+<tr>
+<th width="50%">For Claude & Gemini</th>
+<th width="50%">For OpenAI</th>
+</tr>
+<tr>
+<td valign="top">
 
-AI: Here's an efficient solution using two pointers:
-
-def merge_sorted_arrays(arr1, arr2):
-    result = []
-    i = j = 0
-
-    while i < len(arr1) and j < len(arr2):
-        if arr1[i] <= arr2[j]:
-            result.append(arr1[i])
-            i += 1
-        else:
-            result.append(arr2[j])
-            j += 1
-
-    result.extend(arr1[i:])
-    result.extend(arr2[j:])
-    return result
-
-# Time: O(n+m), Space: O(n+m)
-```
-
-<br/>
-
----
-
-<br/>
-
-## Prerequisites
-
-<div align="center">
-
-### For Claude & Gemini
-
-</div>
-
-- GCP account with Vertex AI enabled
-- [gcloud CLI](https://cloud.google.com/sdk/docs/install)
-- `jq` JSON processor
-
-<div align="center">
-
-### For OpenAI
-
-</div>
-
-- OpenAI API key
-- `jq` JSON processor
-
-<br/>
-
-<div align="center">
-
-### Quick Setup
-
-</div>
+• GCP account
+• [gcloud CLI](https://cloud.google.com/sdk/docs/install)
+• `jq` processor
 
 ```bash
 # macOS
 brew install jq google-cloud-sdk
 
 # Ubuntu/Debian
-sudo apt-get install jq && curl https://sdk.cloud.google.com | bash
-
-# Configure GCP
-gcloud auth login
-gcloud auth application-default login
-gcloud services enable aiplatform.googleapis.com
+sudo apt-get install jq
+curl https://sdk.cloud.google.com | bash
 ```
 
-<br/>
+</td>
+<td valign="top">
 
----
+• OpenAI API key
+• `jq` processor
 
-<br/>
+```bash
+# macOS
+brew install jq
 
-## Configuration
+# Ubuntu/Debian
+sudo apt-get install jq
+```
 
-Settings live in `~/.ai-tools-config`:
+</td>
+</tr>
+</table>
+
+<br>
+
+## 🎨 Configuration
+
+Your settings live in `~/.ai-tools-config`:
 
 ```bash
 AI_TOOL=claude
@@ -273,83 +256,85 @@ REGION=us-central1
 MODEL=claude-3-5-sonnet@20240620
 ```
 
+<br>
+
 <div align="center">
 
-**Available Models**
+### 🤖 Available Models
 
 </div>
 
 <table align="center">
 <tr>
-<th>Provider</th>
-<th>Models</th>
+<td align="center"><b>Claude</b></td>
+<td align="center"><b>Gemini</b></td>
+<td align="center"><b>OpenAI</b></td>
 </tr>
 <tr>
-<td><strong>Claude</strong></td>
 <td>
-<code>claude-3-5-sonnet@20240620</code><br/>
-<code>claude-3-opus@20240229</code><br/>
-<code>claude-3-haiku@20240307</code>
+
+`claude-3-5-sonnet@20240620` ⭐
+`claude-3-opus@20240229`
+`claude-3-haiku@20240307`
+
 </td>
-</tr>
-<tr>
-<td><strong>Gemini</strong></td>
 <td>
-<code>gemini-2.0-flash-exp</code><br/>
-<code>gemini-1.5-pro</code><br/>
-<code>gemini-1.5-flash</code>
+
+`gemini-2.0-flash-exp` ⚡
+`gemini-1.5-pro`
+`gemini-1.5-flash`
+
 </td>
-</tr>
-<tr>
-<td><strong>OpenAI</strong></td>
 <td>
-<code>gpt-4o</code><br/>
-<code>gpt-4-turbo</code><br/>
-<code>gpt-3.5-turbo</code>
+
+`gpt-4o`
+`gpt-4-turbo`
+`gpt-3.5-turbo`
+
 </td>
 </tr>
 </table>
 
-<br/>
+<br>
 
----
-
-<br/>
-
-## Use Cases
+## 💡 Use Cases
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-**Code Generation**
+### 📝 Code Generation
 
 ```bash
-You: Create a binary search tree
-AI: [Generates complete BST implementation]
+You: Create a REST API endpoint
+
+AI: [Generates complete Flask/FastAPI code]
 ```
 
-**Debugging**
+### 🐛 Debugging
 
 ```bash
-You: Why is this throwing null pointer?
-AI: [Analyzes and explains the issue]
+You: Why is this throwing TypeError?
+
+AI: [Explains and provides fix]
 ```
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-**Code Review**
+### 🔍 Code Review
 
 ```bash
 You: Review this for security issues
-AI: [Identifies vulnerabilities]
+
+AI: [Analyzes and suggests improvements]
 ```
 
-**Documentation**
+### 📚 Documentation
 
 ```bash
-You: Write API docs for this function
+You: Write docstrings for this module
+
 AI: [Generates comprehensive docs]
 ```
 
@@ -357,31 +342,27 @@ AI: [Generates comprehensive docs]
 </tr>
 </table>
 
-<br/>
+<br>
 
----
-
-<br/>
-
-## Advanced
+## ⚙️ Advanced
 
 <details>
-<summary><strong>Script Integration</strong></summary>
-
-<br/>
+<summary><b>🔌 Script Integration</b></summary>
+<br>
 
 ```bash
 #!/bin/bash
 source ~/.ai-tools-config
+
 echo "Using: $AI_TOOL ($MODEL)"
+# Your code here
 ```
 
 </details>
 
 <details>
-<summary><strong>GCP VM Usage</strong></summary>
-
-<br/>
+<summary><b>☁️ GCP VM Usage</b></summary>
+<br>
 
 Auto-detects GCP VMs and uses service account authentication.
 
@@ -392,23 +373,18 @@ vertex-cli  # Just works on GCP VMs
 </details>
 
 <details>
-<summary><strong>Provider Switching</strong></summary>
-
-<br/>
+<summary><b>🔄 Switch Providers</b></summary>
+<br>
 
 ```bash
-vertex-cli  # Run again to change provider
+vertex-cli  # Run again to reconfigure
 ```
 
 </details>
 
-<br/>
+<br>
 
----
-
-<br/>
-
-## Troubleshooting
+## 🆘 Troubleshooting
 
 <details>
 <summary><code>gcloud: command not found</code></summary>
@@ -424,8 +400,9 @@ exec -l $SHELL
 <summary><code>jq: command not found</code></summary>
 
 ```bash
-brew install jq           # macOS
-sudo apt-get install jq   # Ubuntu
+brew install jq              # macOS
+sudo apt-get install jq      # Ubuntu/Debian
+sudo yum install jq          # CentOS/RHEL
 ```
 
 </details>
@@ -448,82 +425,78 @@ gcloud auth application-default login
 
 </details>
 
-<br/>
+<br>
 
----
-
-<br/>
-
-## Documentation
+## 📚 Documentation
 
 <div align="center">
 
 | Guide | Description |
-|:------|:------------|
-| [Quick Start](docs/QUICKSTART.md) | Get started in 5 minutes |
-| [Installation](docs/INSTALL.md) | Detailed setup instructions |
-| [Examples](docs/EXAMPLES.md) | Real-world usage examples |
-| [Architecture](docs/ARCHITECTURE.md) | System design documentation |
-| [Contributing](docs/CONTRIBUTING.md) | How to contribute |
-| [Security](docs/SECURITY.md) | Security best practices |
+|-------|-------------|
+| [📖 Quick Start](docs/QUICKSTART.md) | Get started in 5 minutes |
+| [⚙️ Installation](docs/INSTALL.md) | Detailed setup guide |
+| [💡 Examples](docs/EXAMPLES.md) | Real-world usage |
+| [🏗️ Architecture](docs/ARCHITECTURE.md) | System design |
+| [🤝 Contributing](docs/CONTRIBUTING.md) | Contribution guide |
+| [🔒 Security](docs/SECURITY.md) | Security practices |
 
 </div>
 
-<br/>
+<br>
 
----
+## 🤝 Contributing
 
-<br/>
-
-## Contributing
-
-We ❤️ contributions!
+Contributions make this project better!
 
 <div align="center">
 
 | | |
 |:---:|:---|
-| 🐛 | [Report bugs](https://github.com/code-wiki/vertex-cli/issues) |
-| 💡 | [Suggest features](https://github.com/code-wiki/vertex-cli/issues/new) |
-| 🔧 | [Submit pull requests](docs/CONTRIBUTING.md) |
-| ⭐ | [Star the repo](https://github.com/code-wiki/vertex-cli/stargazers) |
+| 🐛 | [Report a bug](https://github.com/code-wiki/vertex-cli/issues) |
+| 💡 | [Request a feature](https://github.com/code-wiki/vertex-cli/issues/new) |
+| 🔧 | [Submit a pull request](docs/CONTRIBUTING.md) |
+| ⭐ | [Star the repository](https://github.com/code-wiki/vertex-cli/stargazers) |
 
 </div>
 
-<br/>
+<br>
 
----
+## 📜 License
 
-<br/>
+MIT License — free to use, modify, and distribute.
+
+See [LICENSE](LICENSE) for full details.
+
+<br>
 
 <div align="center">
 
-## Support
-
-<br/>
+## ⭐ Support This Project
 
 <a href="https://github.com/code-wiki/vertex-cli/stargazers">
-  <img src="https://img.shields.io/github/stars/code-wiki/vertex-cli?style=for-the-badge&logo=github" alt="Star on GitHub"/>
+  <img src="https://img.shields.io/github/stars/code-wiki/vertex-cli?style=for-the-badge&logo=github&color=yellow" alt="Star on GitHub"/>
 </a>
 
-<br/><br/>
+<br><br>
 
 **Need help?**
 
-[📖 Documentation](docs/QUICKSTART.md) ·
-[🐛 Report Issue](https://github.com/code-wiki/vertex-cli/issues) ·
-[💬 Discussions](https://github.com/code-wiki/vertex-cli/discussions)
+[📖 Read the Docs](docs/QUICKSTART.md) •
+[🐛 Report Issue](https://github.com/code-wiki/vertex-cli/issues) •
+[💬 Start Discussion](https://github.com/code-wiki/vertex-cli/discussions)
 
-<br/><br/>
+<br><br>
 
 ---
 
-<br/>
+<br>
 
-<sub>Built with ❤️ for developers</sub>
+Built with ❤️ by developers, for developers
 
-<br/>
+<br>
 
-<sub>MIT License · Not affiliated with Google, Anthropic, or OpenAI</sub>
+<sub>Not affiliated with Google Cloud, Anthropic, or OpenAI</sub>
 
 </div>
+
+<br>
