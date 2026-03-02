@@ -216,26 +216,26 @@ while true; do
     echo "7) Exit"
     echo ""
 
-    check_gcp_environment
+    check_gcp_environment || true
     echo ""
 
     read -p "Select an option (1-7): " choice
 
     case $choice in
         1)
-            configure_claude
+            configure_claude || true
             ;;
         2)
-            configure_gemini
+            configure_gemini || true
             ;;
         3)
-            configure_openai
+            configure_openai || true
             ;;
         4)
-            show_config
+            show_config || true
             ;;
         5)
-            test_configuration
+            test_configuration || true
             ;;
         6)
             if load_config; then
