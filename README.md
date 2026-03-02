@@ -10,7 +10,7 @@
 
 ```ascii
 ┌─────────────────────────────────────────────────────────┐
-│  Claude • Gemini • OpenAI — All in your terminal       │
+│  Claude • Gemini • OpenAI — All in your terminal        │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -258,7 +258,7 @@ MODEL=claude-3-5-sonnet@20240620
 
 <br>
 
-<div align="center">
+<div align="left">
 
 ### 🤖 Available Models
 
@@ -429,7 +429,7 @@ gcloud auth application-default login
 
 ## 📚 Documentation
 
-<div align="center">
+<div align="left">
 
 | Guide | Description |
 |-------|-------------|
@@ -448,7 +448,7 @@ gcloud auth application-default login
 
 Contributions make this project better!
 
-<div align="center">
+<div align="left">
 
 | | |
 |:---:|:---|
@@ -477,7 +477,7 @@ See [LICENSE](LICENSE) for full details.
   <img src="https://img.shields.io/github/stars/code-wiki/vertex-cli?style=for-the-badge&logo=github&color=yellow" alt="Star on GitHub"/>
 </a>
 
-<br><br>
+<br>
 
 **Need help?**
 
@@ -485,14 +485,9 @@ See [LICENSE](LICENSE) for full details.
 [🐛 Report Issue](https://github.com/code-wiki/vertex-cli/issues) •
 [💬 Start Discussion](https://github.com/code-wiki/vertex-cli/discussions)
 
-<br><br>
-
----
-
 <br>
 
 Built with ❤️ by developers, for developers
-
 <br>
 
 <sub>Not affiliated with Google Cloud, Anthropic, or OpenAI</sub>
