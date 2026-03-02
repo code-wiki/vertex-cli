@@ -1,0 +1,41 @@
+# AI Tools Configuration (contains sensitive data)
+.ai-tools-config
+*-config
+*.key
+
+# API Keys and Credentials
+.env
+.env.local
+*.pem
+credentials.json
+service-account.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Backup files
+*.bak
+*.backup
