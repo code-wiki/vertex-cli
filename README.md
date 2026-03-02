@@ -1,140 +1,127 @@
 <div align="center">
 
-# Vertex CLI
+<h1>
+  <img src="https://raw.githubusercontent.com/code-wiki/vertex-cli/main/assets/logo.svg" alt="Vertex CLI" width="80" height="80" />
+  <br/>
+  Vertex CLI
+</h1>
 
-### A unified CLI for Claude Code, Gemini, and OpenAI
+<p align="center">
+  <strong>One interface. Three AI giants. Infinite possibilities.</strong>
+</p>
 
-**Run AI coding assistants directly from your terminal**
+<p align="center">
+  <a href="#quick-start">Quick Start</a> ·
+  <a href="#installation">Installation</a> ·
+  <a href="#documentation">Documentation</a> ·
+  <a href="#examples">Examples</a>
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
-[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-blue)](https://github.com/code-wiki/vertex-cli)
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
+  <a href="https://www.gnu.org/software/bash/"><img src="https://img.shields.io/badge/Made%20with-Bash-1f425f.svg?style=flat-square" alt="Bash"></a>
+  <a href="https://github.com/code-wiki/vertex-cli/stargazers"><img src="https://img.shields.io/github/stars/code-wiki/vertex-cli?style=flat-square" alt="Stars"></a>
+</p>
 
-[Quick Start](#quick-start) • [Features](#features) • [Installation](#installation) • [Documentation](#documentation)
-
----
+<br/>
 
 </div>
 
-## Why Vertex CLI?
+## What is Vertex CLI?
 
-**Problem:** AI coding assistants are powerful, but switching between different providers, managing API keys, and configuring each tool separately is tedious.
+A unified command-line interface for accessing **Claude**, **Gemini**, and **OpenAI** from your terminal. Stop juggling between different tools, APIs, and configurations.
 
-**Solution:** Vertex CLI gives you a single, unified interface to access Claude Code, Gemini, and OpenAI from your terminal.
+<br/>
 
-### Key Benefits
+<div align="center">
 
-| Feature | Description |
-|---------|-------------|
-| **Unified Interface** | One CLI for all major AI providers |
-| **Quick Setup** | Configure once, use forever |
-| **Terminal Native** | No browser, no GUI - just your terminal |
-| **Provider Agnostic** | Switch between Claude, Gemini, and OpenAI instantly |
-| **Open Source** | Free to use, modify, and contribute |
+### Why Use This?
+
+</div>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="https://via.placeholder.com/60/4A90E2/FFFFFF?text=⚡" width="60" alt="Fast"/>
+<br/><br/>
+<strong>Blazing Fast</strong>
+<br/><br/>
+Configure once, use forever.<br/>No browser, no GUI.
+</td>
+<td align="center" width="33%">
+<img src="https://via.placeholder.com/60/7ED321/FFFFFF?text=🔄" width="60" alt="Unified"/>
+<br/><br/>
+<strong>Unified Interface</strong>
+<br/><br/>
+One CLI for all providers.<br/>Seamless switching.
+</td>
+<td align="center" width="33%">
+<img src="https://via.placeholder.com/60/F5A623/FFFFFF?text=🎯" width="60" alt="Simple"/>
+<br/><br/>
+<strong>Dead Simple</strong>
+<br/><br/>
+Three commands to start.<br/>That's it.
+</td>
+</tr>
+</table>
+
+<br/>
 
 ---
 
-## Features
-
-- **Multi-Provider Support** - Claude, Gemini, and OpenAI in one tool
-- **Interactive Configuration** - Simple menu-driven setup
-- **Persistent Settings** - Configure once, use everywhere
-- **GCP Integration** - Use Claude and Gemini via Vertex AI
-- **Direct API Support** - Connect to OpenAI directly
-- **Cross-Platform** - Works on macOS, Linux, and Cloud Shell
-
----
+<br/>
 
 ## Quick Start
 
-### Installation
+<div align="center">
 
 ```bash
-# Clone repository
-git clone https://github.com/code-wiki/vertex-cli.git
-cd vertex-cli
+# Clone
+git clone https://github.com/code-wiki/vertex-cli.git && cd vertex-cli
 
-# Run from repo
+# Configure
 ./vertex-cli
 
-# Or install system-wide
-make install
-vertex-cli
+# Start chatting
+./bin/vertex-chat
 ```
 
-### First Use
+</div>
 
-```bash
-# Configure your AI provider
-vertex-cli
+<br/>
 
-# Select from menu:
-# 1) Configure Claude (Vertex AI)
-# 2) Configure Gemini (Vertex AI)
-# 3) Configure OpenAI
+**That's literally it.** You're now coding with AI.
 
-# Start coding with AI
-vertex-chat
-```
-
-### Example Session
-
-```
-You: Write a Python function to validate email addresses
-
-AI: Here's a Python function using regex:
-
-def validate_email(email):
-    import re
-    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
-    return re.match(pattern, email) is not None
-
-# Example
-print(validate_email("user@example.com"))  # True
-print(validate_email("invalid"))            # False
-```
+<br/>
 
 ---
 
-## Prerequisites
+<br/>
 
-### For Claude & Gemini (via Vertex AI)
+## Features
 
-- GCP account with Vertex AI enabled
-- [gcloud CLI](https://cloud.google.com/sdk/docs/install) installed
-- `jq` for JSON processing
+<div align="center">
 
-### For OpenAI
+| | |
+|:---:|:---|
+| **🤖** | **Multi-Provider** — Claude, Gemini, OpenAI in one tool |
+| **⚙️** | **Auto-Configuration** — Interactive setup wizard |
+| **💾** | **Persistent Settings** — Configure once, use everywhere |
+| **☁️** | **Cloud Ready** — Works on local machines and GCP VMs |
+| **🔐** | **Secure** — API keys stored safely, never exposed |
+| **🎨** | **Customizable** — Use any model, any region |
 
-- OpenAI API key
-- `jq` for JSON processing
+</div>
 
-### Installing Dependencies
-
-**macOS:**
-```bash
-brew install jq google-cloud-sdk
-```
-
-**Ubuntu/Debian:**
-```bash
-sudo apt-get install jq
-curl https://sdk.cloud.google.com | bash
-```
-
-**GCP Setup:**
-```bash
-gcloud auth login
-gcloud auth application-default login
-gcloud config set project YOUR_PROJECT_ID
-gcloud services enable aiplatform.googleapis.com
-```
+<br/>
 
 ---
+
+<br/>
 
 ## Installation
 
-### Option 1: Run from Repository
+### Option 1: Run Directly
 
 ```bash
 git clone https://github.com/code-wiki/vertex-cli.git
@@ -142,360 +129,401 @@ cd vertex-cli
 ./vertex-cli
 ```
 
-### Option 2: System-Wide Installation
+### Option 2: Install Globally
 
 ```bash
-git clone https://github.com/code-wiki/vertex-cli.git
-cd vertex-cli
 make install
+vertex-cli  # Available system-wide
 ```
 
-Commands available after installation:
-- `vertex-cli` - Configure AI providers
-- `vertex-chat` - Start chat interface
-- `vertex-setup` - Run setup wizard
+<br/>
 
 ---
 
+<br/>
+
 ## Usage
 
-### Configure Provider
+<div align="center">
 
-Run the configuration tool:
+### Configure Your Provider
+
+</div>
 
 ```bash
 vertex-cli
 ```
 
-**Menu Options:**
-1. Configure Claude (Vertex AI)
-2. Configure Gemini (Vertex AI)
-3. Configure OpenAI
-4. Show current configuration
-5. Test configuration
-6. Launch AI chat interface
-7. Exit
+<div align="center">
 
-### Claude Setup
+Choose from the menu:
 
-Select option 1 and provide:
-- **Project ID** - Your GCP project
-- **Region** - GCP region (default: us-central1)
-- **Model** - Claude model version
+</div>
 
-Available models:
-- `claude-3-5-sonnet@20240620` (recommended)
-- `claude-3-opus@20240229`
-- `claude-3-sonnet@20240229`
-- `claude-3-haiku@20240307`
+```
+1) Configure Claude (Vertex AI)
+2) Configure Gemini (Vertex AI)
+3) Configure OpenAI
+```
 
-### Gemini Setup
+<br/>
 
-Select option 2 and provide:
-- **Project ID** - Your GCP project
-- **Region** - GCP region (default: us-central1)
-- **Model** - Gemini model version
+<div align="center">
 
-Available models:
-- `gemini-2.0-flash-exp` (fastest)
-- `gemini-1.5-pro`
-- `gemini-1.5-flash`
+### Start Coding with AI
 
-### OpenAI Setup
-
-Select option 3 and provide:
-- **API Key** - Your OpenAI API key
-- **Model** - Model name (default: gpt-4o)
-- **Endpoint** - API endpoint (default: https://api.openai.com/v1)
-
-### Start Chatting
+</div>
 
 ```bash
 vertex-chat
 ```
 
-Type your questions and get instant AI responses. Type `exit` or `quit` to end the session.
+<div align="center">
+
+**Example conversation:**
+
+</div>
+
+```python
+You: Write a function to merge two sorted arrays
+
+AI: Here's an efficient solution using two pointers:
+
+def merge_sorted_arrays(arr1, arr2):
+    result = []
+    i = j = 0
+
+    while i < len(arr1) and j < len(arr2):
+        if arr1[i] <= arr2[j]:
+            result.append(arr1[i])
+            i += 1
+        else:
+            result.append(arr2[j])
+            j += 1
+
+    result.extend(arr1[i:])
+    result.extend(arr2[j:])
+    return result
+
+# Time: O(n+m), Space: O(n+m)
+```
+
+<br/>
 
 ---
+
+<br/>
+
+## Prerequisites
+
+<div align="center">
+
+### For Claude & Gemini
+
+</div>
+
+- GCP account with Vertex AI enabled
+- [gcloud CLI](https://cloud.google.com/sdk/docs/install)
+- `jq` JSON processor
+
+<div align="center">
+
+### For OpenAI
+
+</div>
+
+- OpenAI API key
+- `jq` JSON processor
+
+<br/>
+
+<div align="center">
+
+### Quick Setup
+
+</div>
+
+```bash
+# macOS
+brew install jq google-cloud-sdk
+
+# Ubuntu/Debian
+sudo apt-get install jq && curl https://sdk.cloud.google.com | bash
+
+# Configure GCP
+gcloud auth login
+gcloud auth application-default login
+gcloud services enable aiplatform.googleapis.com
+```
+
+<br/>
+
+---
+
+<br/>
 
 ## Configuration
 
-Settings are stored in `~/.ai-tools-config`
+Settings live in `~/.ai-tools-config`:
 
-**Example Configuration:**
 ```bash
 AI_TOOL=claude
-PROJECT_ID=my-gcp-project
+PROJECT_ID=my-project
 REGION=us-central1
 MODEL=claude-3-5-sonnet@20240620
-ENDPOINT=https://us-central1-aiplatform.googleapis.com
 ```
 
-You can edit this file manually or reconfigure using `vertex-cli`.
+<div align="center">
+
+**Available Models**
+
+</div>
+
+<table align="center">
+<tr>
+<th>Provider</th>
+<th>Models</th>
+</tr>
+<tr>
+<td><strong>Claude</strong></td>
+<td>
+<code>claude-3-5-sonnet@20240620</code><br/>
+<code>claude-3-opus@20240229</code><br/>
+<code>claude-3-haiku@20240307</code>
+</td>
+</tr>
+<tr>
+<td><strong>Gemini</strong></td>
+<td>
+<code>gemini-2.0-flash-exp</code><br/>
+<code>gemini-1.5-pro</code><br/>
+<code>gemini-1.5-flash</code>
+</td>
+</tr>
+<tr>
+<td><strong>OpenAI</strong></td>
+<td>
+<code>gpt-4o</code><br/>
+<code>gpt-4-turbo</code><br/>
+<code>gpt-3.5-turbo</code>
+</td>
+</tr>
+</table>
+
+<br/>
 
 ---
+
+<br/>
 
 ## Use Cases
 
-### Code Generation
+<table>
+<tr>
+<td width="50%">
+
+**Code Generation**
 
 ```bash
-You: Create a REST API endpoint for user authentication
-AI: [Generates Flask/FastAPI code with authentication logic]
+You: Create a binary search tree
+AI: [Generates complete BST implementation]
 ```
 
-### Code Review
+**Debugging**
 
 ```bash
-You: Review this function for security issues
-AI: [Analyzes code and suggests improvements]
+You: Why is this throwing null pointer?
+AI: [Analyzes and explains the issue]
 ```
 
-### Debugging
+</td>
+<td width="50%">
+
+**Code Review**
 
 ```bash
-You: Why is this throwing a TypeError?
-AI: [Explains the error and provides fix]
+You: Review this for security issues
+AI: [Identifies vulnerabilities]
 ```
 
-### Documentation
+**Documentation**
 
 ```bash
-You: Write docstrings for this module
-AI: [Generates comprehensive documentation]
+You: Write API docs for this function
+AI: [Generates comprehensive docs]
 ```
+
+</td>
+</tr>
+</table>
+
+<br/>
 
 ---
 
-## Advanced Usage
+<br/>
 
-### Using in Scripts
+## Advanced
+
+<details>
+<summary><strong>Script Integration</strong></summary>
+
+<br/>
 
 ```bash
 #!/bin/bash
 source ~/.ai-tools-config
-
-echo "Active AI: $AI_TOOL ($MODEL)"
-# Your automation here
+echo "Using: $AI_TOOL ($MODEL)"
 ```
 
-### Running on GCP VMs
+</details>
 
-Vertex CLI auto-detects GCP VMs and uses service account authentication:
+<details>
+<summary><strong>GCP VM Usage</strong></summary>
+
+<br/>
+
+Auto-detects GCP VMs and uses service account authentication.
 
 ```bash
-# On GCP VM - no extra auth needed
-vertex-cli
+vertex-cli  # Just works on GCP VMs
 ```
 
-### Switching Providers
+</details>
 
-Simply run `vertex-cli` again and select a different option.
+<details>
+<summary><strong>Provider Switching</strong></summary>
+
+<br/>
+
+```bash
+vertex-cli  # Run again to change provider
+```
+
+</details>
+
+<br/>
 
 ---
+
+<br/>
 
 ## Troubleshooting
 
 <details>
-<summary><b>gcloud command not found</b></summary>
+<summary><code>gcloud: command not found</code></summary>
 
-Install gcloud CLI:
 ```bash
 curl https://sdk.cloud.google.com | bash
 exec -l $SHELL
 ```
+
 </details>
 
 <details>
-<summary><b>jq command not found</b></summary>
+<summary><code>jq: command not found</code></summary>
 
-Install jq:
 ```bash
 brew install jq           # macOS
-sudo apt-get install jq   # Ubuntu/Debian
-sudo yum install jq       # CentOS/RHEL
+sudo apt-get install jq   # Ubuntu
 ```
+
 </details>
 
 <details>
-<summary><b>Authentication errors</b></summary>
+<summary><code>API not enabled</code></summary>
 
-Re-authenticate:
-```bash
-gcloud auth application-default login
-gcloud auth application-default print-access-token  # verify
-```
-</details>
-
-<details>
-<summary><b>API not enabled</b></summary>
-
-Enable Vertex AI:
 ```bash
 gcloud services enable aiplatform.googleapis.com
 ```
+
 </details>
 
 <details>
-<summary><b>Permission denied</b></summary>
+<summary><code>Authentication failed</code></summary>
 
-Grant required roles:
 ```bash
-gcloud projects add-iam-policy-binding YOUR_PROJECT_ID \
-  --member="user:YOUR_EMAIL" \
-  --role="roles/aiplatform.user"
+gcloud auth application-default login
 ```
+
 </details>
 
----
-
-## Project Structure
-
-```
-vertex-cli/
-├── bin/              # Executable scripts
-│   ├── vertex-cli    # Configuration UI
-│   ├── vertex-chat   # Chat interface
-│   └── vertex-setup  # Setup wizard
-├── docs/             # Documentation
-├── tests/            # Test scripts
-└── assets/           # Project assets
-```
+<br/>
 
 ---
+
+<br/>
 
 ## Documentation
 
-| Document | Description |
-|----------|-------------|
+<div align="center">
+
+| Guide | Description |
+|:------|:------------|
 | [Quick Start](docs/QUICKSTART.md) | Get started in 5 minutes |
-| [Installation](docs/INSTALL.md) | Detailed setup guide |
-| [Examples](docs/EXAMPLES.md) | Usage examples |
-| [Architecture](docs/ARCHITECTURE.md) | System design |
-| [Contributing](docs/CONTRIBUTING.md) | Contribution guide |
-| [Security](docs/SECURITY.md) | Security practices |
+| [Installation](docs/INSTALL.md) | Detailed setup instructions |
+| [Examples](docs/EXAMPLES.md) | Real-world usage examples |
+| [Architecture](docs/ARCHITECTURE.md) | System design documentation |
+| [Contributing](docs/CONTRIBUTING.md) | How to contribute |
+| [Security](docs/SECURITY.md) | Security best practices |
+
+</div>
+
+<br/>
 
 ---
 
-## Examples
-
-### Generate a Function
-
-```bash
-You: Write a binary search function in Python
-
-AI: Here's an efficient binary search implementation:
-
-def binary_search(arr, target):
-    left, right = 0, len(arr) - 1
-
-    while left <= right:
-        mid = (left + right) // 2
-
-        if arr[mid] == target:
-            return mid
-        elif arr[mid] < target:
-            left = mid + 1
-        else:
-            right = mid - 1
-
-    return -1  # Not found
-
-# Example
-numbers = [1, 3, 5, 7, 9, 11, 13]
-print(binary_search(numbers, 7))  # Output: 3
-```
-
-### Debug Code
-
-```bash
-You: Why does this fail? for i in 5: print(i)
-
-AI: The error occurs because you're trying to iterate over an integer.
-    Python requires an iterable object (list, tuple, range, etc.)
-
-    Fix: Use range() to create an iterable
-
-    for i in range(5):
-        print(i)
-
-    This prints: 0, 1, 2, 3, 4
-```
-
-### Explain Concepts
-
-```bash
-You: Explain async/await in JavaScript
-
-AI: async/await is syntactic sugar for Promises:
-
-    // Traditional Promise
-    fetch(url)
-      .then(response => response.json())
-      .then(data => console.log(data))
-
-    // With async/await (cleaner)
-    async function getData() {
-      const response = await fetch(url);
-      const data = await response.json();
-      console.log(data);
-    }
-
-    Benefits:
-    - More readable, synchronous-looking code
-    - Better error handling with try/catch
-    - Easier to debug
-```
-
-More examples in [docs/EXAMPLES.md](docs/EXAMPLES.md)
-
----
+<br/>
 
 ## Contributing
 
-Contributions are welcome! Here's how to help:
+We ❤️ contributions!
 
-1. **Report bugs** - [GitHub Issues](https://github.com/code-wiki/vertex-cli/issues)
-2. **Suggest features** - [Feature Requests](https://github.com/code-wiki/vertex-cli/issues/new)
-3. **Submit PRs** - See [CONTRIBUTING.md](docs/CONTRIBUTING.md)
-4. **Star the repo** - Help others discover this tool
-5. **Share** - Spread the word
+<div align="center">
+
+| | |
+|:---:|:---|
+| 🐛 | [Report bugs](https://github.com/code-wiki/vertex-cli/issues) |
+| 💡 | [Suggest features](https://github.com/code-wiki/vertex-cli/issues/new) |
+| 🔧 | [Submit pull requests](docs/CONTRIBUTING.md) |
+| ⭐ | [Star the repo](https://github.com/code-wiki/vertex-cli/stargazers) |
+
+</div>
+
+<br/>
 
 ---
 
-## License
+<br/>
 
-MIT License - see [LICENSE](LICENSE)
-
-Free to use, modify, and distribute.
-
----
+<div align="center">
 
 ## Support
 
-<div align="center">
+<br/>
 
-### Found this useful?
+<a href="https://github.com/code-wiki/vertex-cli/stargazers">
+  <img src="https://img.shields.io/github/stars/code-wiki/vertex-cli?style=for-the-badge&logo=github" alt="Star on GitHub"/>
+</a>
 
-[![Star on GitHub](https://img.shields.io/github/stars/code-wiki/vertex-cli?style=social)](https://github.com/code-wiki/vertex-cli/stargazers)
+<br/><br/>
 
-**Get Help:**
-- [Documentation](docs/QUICKSTART.md)
-- [Report a Bug](https://github.com/code-wiki/vertex-cli/issues)
-- [Request a Feature](https://github.com/code-wiki/vertex-cli/issues/new)
+**Need help?**
 
-</div>
+[📖 Documentation](docs/QUICKSTART.md) ·
+[🐛 Report Issue](https://github.com/code-wiki/vertex-cli/issues) ·
+[💬 Discussions](https://github.com/code-wiki/vertex-cli/discussions)
 
----
-
-<div align="center">
-
-**Built for developers, by developers**
-
-[Home](https://github.com/code-wiki/vertex-cli) • [Docs](docs/QUICKSTART.md) • [Examples](docs/EXAMPLES.md) • [Contribute](docs/CONTRIBUTING.md)
-
-</div>
+<br/><br/>
 
 ---
 
-<sub>**Disclaimer:** This is an unofficial tool and is not affiliated with Google Cloud, Anthropic, or OpenAI.</sub>
+<br/>
+
+<sub>Built with ❤️ for developers</sub>
+
+<br/>
+
+<sub>MIT License · Not affiliated with Google, Anthropic, or OpenAI</sub>
+
+</div>
