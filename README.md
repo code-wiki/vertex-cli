@@ -9,9 +9,9 @@
 [![Stars](https://img.shields.io/github/stars/code-wiki/vertex-cli?style=for-the-badge&logo=github)](https://github.com/code-wiki/vertex-cli/stargazers)
   
 ```ascii
-                                ┌─────────────────────────────────────────────────────────┐
-                                │  Claude • Gemini • OpenAI — All in your terminal        │
-                                └─────────────────────────────────────────────────────────┘
+                        ┌─────────────────────────────────────────────────────────┐
+                        │  Claude • Gemini • OpenAI — All in your terminal        │
+                        └─────────────────────────────────────────────────────────┘
 ```
 
 [Quick Start](#-quick-start) • [Installation](#-installation) • [Features](#-features) • [Docs](#-documentation)
