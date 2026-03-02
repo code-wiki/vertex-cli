@@ -1,10 +1,10 @@
-# 🤖 GCP AI Tools Runner
+# 🤖 Vertex CLI
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Shell](https://img.shields.io/badge/Shell-Bash-green.svg)](https://www.gnu.org/software/bash/)
-[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-blue.svg)](https://github.com/code-wiki/gcp-ai-tools-runner)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-blue.svg)](https://github.com/code-wiki/vertex-cli)
 
-An interactive shell script to configure and use AI models (Claude, Gemini, OpenAI) on GCP Vertex AI or locally. Perfect for developers who want to leverage their GCP free credits and experiment with multiple AI models.
+A unified command-line interface for multiple AI providers (Claude, Gemini, OpenAI) via GCP Vertex AI. Perfect for developers who want to leverage their GCP free credits and experiment with multiple AI models.
 
 ## 🌟 Why This Project?
 
@@ -268,7 +268,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact & Support
 
-- Create an [Issue](https://github.com/code-wiki/gcp-ai-tools-runner/issues) for bug reports or feature requests
+- Create an [Issue](https://github.com/code-wiki/vertex-cli/issues) for bug reports or feature requests
 - Star ⭐ this repository if you find it helpful
 - Share with others who might benefit from GCP AI credits
 

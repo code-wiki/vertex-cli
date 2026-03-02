@@ -1,6 +1,6 @@
 # Usage Examples
 
-Real-world examples of using GCP AI Tools Runner.
+Real-world examples of using Vertex CLI.
 
 ## Table of Contents
 - [Basic Chat](#basic-chat)
@@ -350,4 +350,4 @@ Improvements:
 
 ---
 
-For more examples, visit the [GitHub repository](https://github.com/code-wiki/gcp-ai-tools-runner) or contribute your own!
+For more examples, visit the [GitHub repository](https://github.com/code-wiki/vertex-cli) or contribute your own!

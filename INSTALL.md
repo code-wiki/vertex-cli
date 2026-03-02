@@ -1,6 +1,6 @@
 # Installation Guide
 
-Complete installation guide for GCP AI Tools Runner.
+Complete installation guide for Vertex CLI.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -81,8 +81,8 @@ Complete installation guide for GCP AI Tools Runner.
 
 ```bash
 # Clone the repository
-git clone https://github.com/code-wiki/gcp-ai-tools-runner.git
-cd gcp-ai-tools-runner
+git clone https://github.com/code-wiki/vertex-cli.git
+cd vertex-cli
 
 # Make scripts executable
 chmod +x enable-ai.sh chat.sh
@@ -97,12 +97,12 @@ chmod +x enable-ai.sh chat.sh
 
 ```bash
 # Using HTTPS
-git clone https://github.com/code-wiki/gcp-ai-tools-runner.git
+git clone https://github.com/code-wiki/vertex-cli.git
 
 # Or using SSH
-git clone git@github.com:code-wiki/gcp-ai-tools-runner.git
+git clone git@github.com:code-wiki/vertex-cli.git
 
-cd gcp-ai-tools-runner
+cd vertex-cli
 ```
 
 ### Step 2: Configure GCP (for Vertex AI)
@@ -201,8 +201,8 @@ sudo apt-get update
 sudo apt-get install -y git jq
 
 # Clone repository
-git clone https://github.com/code-wiki/gcp-ai-tools-runner.git
-cd gcp-ai-tools-runner
+git clone https://github.com/code-wiki/vertex-cli.git
+cd vertex-cli
 
 # Make scripts executable
 chmod +x enable-ai.sh chat.sh
@@ -275,7 +275,7 @@ gcloud config set project YOUR_PROJECT_ID
 ### Getting Help
 
 If you encounter issues:
-1. Check the [GitHub Issues](https://github.com/code-wiki/gcp-ai-tools-runner/issues)
+1. Check the [GitHub Issues](https://github.com/code-wiki/vertex-cli/issues)
 2. Review [SECURITY.md](SECURITY.md) for security-related issues
 3. Create a new issue with:
    - Your OS and version
@@ -300,7 +300,7 @@ rm ~/.ai-tools-config
 
 # Remove repository
 cd ..
-rm -rf gcp-ai-tools-runner
+rm -rf vertex-cli
 
 # (Optional) Revoke gcloud credentials
 gcloud auth revoke
@@ -308,4 +308,4 @@ gcloud auth revoke
 
 ---
 
-**Need more help?** Open an issue on [GitHub](https://github.com/code-wiki/gcp-ai-tools-runner/issues)
+**Need more help?** Open an issue on [GitHub](https://github.com/code-wiki/vertex-cli/issues)

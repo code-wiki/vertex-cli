@@ -2,7 +2,7 @@
 
 ## What You Have
 
-A complete, production-ready open source project: **GCP AI Tools Runner**
+A complete, production-ready open source project: **Vertex CLI**
 
 ### Core Features ✨
 
@@ -37,7 +37,7 @@ A complete, production-ready open source project: **GCP AI Tools Runner**
 ## File Structure
 
 ```
-gcp-ai-tools-runner/
+vertex-cli/
 ├── 📜 Core Scripts
 │   ├── enable-ai.sh       (Interactive config menu)
 │   ├── chat.sh            (AI chat interface)
@@ -89,10 +89,10 @@ gcp-ai-tools-runner/
 ```bash
 # Option A: Via GitHub website
 # Go to github.com/new and create repository named:
-# gcp-ai-tools-runner
+# vertex-cli
 
 # Option B: Via GitHub CLI
-gh repo create gcp-ai-tools-runner --public \
+gh repo create vertex-cli --public \
   --description "Interactive shell script to use Claude, Gemini, and OpenAI via GCP Vertex AI"
 ```
 
@@ -103,7 +103,7 @@ gh repo create gcp-ai-tools-runner --public \
 cd /Users/aditya.gautam/Desktop/Dev/Personal/gcp-claude-code-runner
 
 # Add remote (replace YOUR_USERNAME)
-git remote add origin https://github.com/YOUR_USERNAME/gcp-ai-tools-runner.git
+git remote add origin https://github.com/YOUR_USERNAME/vertex-cli.git
 
 # Push to GitHub
 git branch -M main
@@ -144,14 +144,14 @@ On GitHub.com:
 
 **Sample Tweet:**
 ```
-🚀 Just open-sourced GCP AI Tools Runner!
+🚀 Just open-sourced Vertex CLI!
 
 ✅ Use Claude, Gemini & OpenAI via GCP
 ✅ Maximize $300 free GCP credits
 ✅ Simple bash scripts
 ✅ MIT licensed
 
-GitHub: https://github.com/YOUR_USERNAME/gcp-ai-tools-runner
+GitHub: https://github.com/YOUR_USERNAME/vertex-cli
 
 #GCP #AI #OpenSource
 ```

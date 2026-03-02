@@ -1,11 +1,11 @@
 # Project Structure
 
-Overview of the GCP AI Tools Runner project organization.
+Overview of the Vertex CLI project organization.
 
 ## Directory Tree
 
 ```
-gcp-ai-tools-runner/
+vertex-cli/
 ├── .github/
 │   └── ISSUE_TEMPLATE/
 │       ├── bug_report.md          # Bug report template

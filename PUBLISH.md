@@ -1,6 +1,6 @@
 # Publishing Guide
 
-Steps to publish your GCP AI Tools Runner project to GitHub.
+Steps to publish your Vertex CLI project to GitHub.
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ Steps to publish your GCP AI Tools Runner project to GitHub.
 2. Click the "+" icon in top right
 3. Select "New repository"
 4. Fill in details:
-   - **Repository name**: `gcp-ai-tools-runner`
+   - **Repository name**: `vertex-cli`
    - **Description**: "Interactive shell script to use Claude, Gemini, and OpenAI via GCP Vertex AI. Maximize your free GCP credits!"
    - **Visibility**: Public
    - **DO NOT** initialize with README, .gitignore, or license (we already have these)
@@ -33,7 +33,7 @@ brew install gh  # macOS
 gh auth login
 
 # Create repository
-gh repo create gcp-ai-tools-runner --public --description "Interactive shell script to use Claude, Gemini, and OpenAI via GCP Vertex AI"
+gh repo create vertex-cli --public --description "Interactive shell script to use Claude, Gemini, and OpenAI via GCP Vertex AI"
 ```
 
 ## Step 2: Connect Local Repository to GitHub
@@ -42,10 +42,10 @@ After creating the repository on GitHub, you'll see instructions. Use:
 
 ```bash
 # Add remote repository
-git remote add origin https://github.com/YOUR_USERNAME/gcp-ai-tools-runner.git
+git remote add origin https://github.com/YOUR_USERNAME/vertex-cli.git
 
 # Or if using SSH
-git remote add origin git@github.com:YOUR_USERNAME/gcp-ai-tools-runner.git
+git remote add origin git@github.com:YOUR_USERNAME/vertex-cli.git
 
 # Verify remote
 git remote -v
@@ -118,7 +118,7 @@ Create a social preview image (1280x640 recommended):
 2. Upload an image (you can create one at [canva.com](https://canva.com))
 3. Suggested text for image:
    ```
-   GCP AI Tools Runner
+   Vertex CLI
    Use Claude, Gemini & OpenAI
    Via GCP Vertex AI
    Maximize Your Free Credits!
@@ -133,17 +133,17 @@ For documentation hosting:
 3. Branch: main, folder: / (root)
 4. Save
 
-Your docs will be available at: `https://YOUR_USERNAME.github.io/gcp-ai-tools-runner/`
+Your docs will be available at: `https://YOUR_USERNAME.github.io/vertex-cli/`
 
 ## Step 8: Add Badges to README
 
 Consider adding these badges at the top of README.md:
 
 ```markdown
-[![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/gcp-ai-tools-runner?style=social)](https://github.com/YOUR_USERNAME/gcp-ai-tools-runner/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/gcp-ai-tools-runner?style=social)](https://github.com/YOUR_USERNAME/gcp-ai-tools-runner/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/YOUR_USERNAME/gcp-ai-tools-runner)](https://github.com/YOUR_USERNAME/gcp-ai-tools-runner/issues)
-[![GitHub license](https://img.shields.io/github/license/YOUR_USERNAME/gcp-ai-tools-runner)](https://github.com/YOUR_USERNAME/gcp-ai-tools-runner/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/vertex-cli?style=social)](https://github.com/YOUR_USERNAME/vertex-cli/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/vertex-cli?style=social)](https://github.com/YOUR_USERNAME/vertex-cli/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/YOUR_USERNAME/vertex-cli)](https://github.com/YOUR_USERNAME/vertex-cli/issues)
+[![GitHub license](https://img.shields.io/github/license/YOUR_USERNAME/vertex-cli)](https://github.com/YOUR_USERNAME/vertex-cli/blob/main/LICENSE)
 ```
 
 ## Step 9: Create Release
@@ -174,21 +174,21 @@ gh release create v1.0.0 \
 
 **Twitter/X:**
 ```
-🚀 Just open-sourced GCP AI Tools Runner!
+🚀 Just open-sourced Vertex CLI!
 
 ✅ Use Claude, Gemini & OpenAI via GCP Vertex AI
 ✅ Maximize your $300 free GCP credits
 ✅ Simple bash scripts, no complex setup
 ✅ MIT licensed
 
-Check it out: https://github.com/YOUR_USERNAME/gcp-ai-tools-runner
+Check it out: https://github.com/YOUR_USERNAME/vertex-cli
 
 #GCP #AI #OpenSource #Claude #Gemini
 ```
 
 **LinkedIn:**
 ```
-I'm excited to share my new open-source project: GCP AI Tools Runner!
+I'm excited to share my new open-source project: Vertex CLI!
 
 This tool helps developers maximize their GCP free credits by providing easy access to Claude and Gemini via Vertex AI, with support for OpenAI too.
 
@@ -201,7 +201,7 @@ Features:
 
 Perfect for developers who want to experiment with multiple AI models without complex setup.
 
-GitHub: https://github.com/YOUR_USERNAME/gcp-ai-tools-runner
+GitHub: https://github.com/YOUR_USERNAME/vertex-cli
 
 Would love your feedback and contributions!
 ```

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Setup script for GCP AI Tools Runner
+# Setup script for Vertex CLI
 # This script automates the initial setup process
 
 set -e
@@ -15,7 +15,7 @@ NC='\033[0m'
 echo -e "${BLUE}"
 cat << "EOF"
 ╔═══════════════════════════════════════╗
-║   GCP AI Tools Runner - Setup        ║
+║      Vertex CLI - Setup              ║
 ║   Quick Setup & Dependency Check     ║
 ╚═══════════════════════════════════════╝
 EOF

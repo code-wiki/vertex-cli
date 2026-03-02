@@ -1,4 +1,4 @@
-# Contributing to GCP AI Tools Runner
+# Contributing to Vertex CLI
 
 Thank you for your interest in contributing! This document provides guidelines for contributing to this project.
 

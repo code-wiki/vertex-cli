@@ -21,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-03-02
 
 ### Added
-- Initial release of GCP AI Tools Runner
+- Initial release of Vertex CLI
 - Support for Claude via GCP Vertex AI
 - Support for Gemini via GCP Vertex AI
 - Support for OpenAI API
@@ -68,7 +68,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### v1.0.0 - Initial Release
 
-This is the first public release of GCP AI Tools Runner. The tool enables developers to:
+This is the first public release of Vertex CLI. The tool enables developers to:
 
 1. **Use GCP Free Credits**: Leverage $300 GCP credits to access Claude and Gemini
 2. **Multi-Provider Support**: Easily switch between Claude, Gemini, and OpenAI
@@ -78,8 +78,8 @@ This is the first public release of GCP AI Tools Runner. The tool enables develo
 
 **Getting Started:**
 ```bash
-git clone https://github.com/code-wiki/gcp-ai-tools-runner.git
-cd gcp-ai-tools-runner
+git clone https://github.com/code-wiki/vertex-cli.git
+cd vertex-cli
 ./setup.sh
 ./enable-ai.sh
 ```
@@ -103,6 +103,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
 
 ## Links
 
-- [GitHub Repository](https://github.com/code-wiki/gcp-ai-tools-runner)
-- [Issue Tracker](https://github.com/code-wiki/gcp-ai-tools-runner/issues)
+- [GitHub Repository](https://github.com/code-wiki/vertex-cli)
+- [Issue Tracker](https://github.com/code-wiki/vertex-cli/issues)
 - [Documentation](README.md)
