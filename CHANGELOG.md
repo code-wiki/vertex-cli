@@ -78,7 +78,7 @@ This is the first public release of GCP AI Tools Runner. The tool enables develo
 
 **Getting Started:**
 ```bash
-git clone https://github.com/yourusername/gcp-ai-tools-runner.git
+git clone https://github.com/code-wiki/gcp-ai-tools-runner.git
 cd gcp-ai-tools-runner
 ./setup.sh
 ./enable-ai.sh
@@ -103,6 +103,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
 
 ## Links
 
-- [GitHub Repository](https://github.com/yourusername/gcp-ai-tools-runner)
-- [Issue Tracker](https://github.com/yourusername/gcp-ai-tools-runner/issues)
+- [GitHub Repository](https://github.com/code-wiki/gcp-ai-tools-runner)
+- [Issue Tracker](https://github.com/code-wiki/gcp-ai-tools-runner/issues)
 - [Documentation](README.md)

@@ -101,8 +101,8 @@ Update the README.md file to replace placeholders:
 
 ```bash
 # Replace YOUR_USERNAME with your actual GitHub username
-sed -i '' 's/yourusername/YOUR_ACTUAL_USERNAME/g' *.md
-sed -i '' 's/yourusername/YOUR_ACTUAL_USERNAME/g' .github/ISSUE_TEMPLATE/*.md
+sed -i '' 's/code-wiki/YOUR_ACTUAL_USERNAME/g' *.md
+sed -i '' 's/code-wiki/YOUR_ACTUAL_USERNAME/g' .github/ISSUE_TEMPLATE/*.md
 
 # Commit changes
 git add .
