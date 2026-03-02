@@ -8,11 +8,13 @@
 [![Made with Bash](https://img.shields.io/badge/made%20with-bash-1f425f.svg?style=for-the-badge&logo=gnu-bash)](https://www.gnu.org/software/bash/)
 [![Stars](https://img.shields.io/github/stars/code-wiki/vertex-cli?style=for-the-badge&logo=github)](https://github.com/code-wiki/vertex-cli/stargazers)
 
+<div align="center">
 ```ascii
 ┌─────────────────────────────────────────────────────────┐
 │  Claude • Gemini • OpenAI — All in your terminal        │
 └─────────────────────────────────────────────────────────┘
 ```
+</div>
 
 [Quick Start](#-quick-start) • [Installation](#-installation) • [Features](#-features) • [Docs](#-documentation)
 
