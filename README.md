@@ -49,7 +49,7 @@ git clone https://github.com/code-wiki/vertex-cli.git && cd vertex-cli
 <table>
 <tbody>
 <tr>
-<td align="center" width="25%">
+<td align="center" width="20%">
 <br>
 <h3>🤖</h3>
 <b>Multi-Provider</b>
@@ -59,7 +59,17 @@ Claude, Gemini, OpenAI
 in one tool
 <br><br>
 </td>
-<td align="center" width="25%">
+<td align="center" width="20%">
+<br>
+<h3>📦</h3>
+<b>CLI Tools</b>
+<br><br>
+Install & manage
+<br>
+official CLIs
+<br><br>
+</td>
+<td align="center" width="20%">
 <br>
 <h3>⚙️</h3>
 <b>Auto-Config</b>
@@ -69,7 +79,7 @@ Interactive setup
 wizard
 <br><br>
 </td>
-<td align="center" width="25%">
+<td align="center" width="20%">
 <br>
 <h3>💾</h3>
 <b>Persistent</b>
@@ -79,7 +89,7 @@ Configure once
 use forever
 <br><br>
 </td>
-<td align="center" width="25%">
+<td align="center" width="20%">
 <br>
 <h3>🔐</h3>
 <b>Secure</b>
@@ -97,16 +107,59 @@ never exposed
 
 ## 🚀 Quick Start
 
-### Step 1: Get the Code
+## Installation by Platform
+
+### 🐧 Linux (Ubuntu/Debian/CentOS/RHEL)
 
 ```bash
 git clone https://github.com/code-wiki/vertex-cli.git
 cd vertex-cli
+chmod +x install.sh
+./install.sh
+./vertex-cli
 ```
 
-### Step 2: Configure
+### 🍎 macOS
 
 ```bash
+git clone https://github.com/code-wiki/vertex-cli.git
+cd vertex-cli
+chmod +x install.sh
+./install.sh
+./vertex-cli
+```
+
+### 🪟 Windows
+
+**Option 1: Git Bash (Recommended)**
+```bash
+git clone https://github.com/code-wiki/vertex-cli.git
+cd vertex-cli
+bash install.sh
+bash vertex-cli
+```
+
+**Option 2: PowerShell**
+```powershell
+git clone https://github.com/code-wiki/vertex-cli.git
+cd vertex-cli
+.\vertex-cli.ps1
+```
+
+**Option 3: Command Prompt**
+```cmd
+git clone https://github.com/code-wiki/vertex-cli.git
+cd vertex-cli
+vertex-cli.bat
+```
+
+**Option 4: WSL (Windows Subsystem for Linux)**
+```bash
+wsl --install  # If not already installed
+wsl
+git clone https://github.com/code-wiki/vertex-cli.git
+cd vertex-cli
+./install.sh
 ./vertex-cli
 ```
 
@@ -115,17 +168,32 @@ cd vertex-cli
 <br>
 
 ```
-================================
-   AI Tools Configuration
-================================
+╔══════════════════════════════════════════════════════════╗
+║              🔮 VERTEX CLI - MAIN MENU                  ║
+╚══════════════════════════════════════════════════════════╝
 
-1) Configure Claude (Vertex AI)
-2) Configure Gemini (Vertex AI)
-3) Configure OpenAI
-4) Show current configuration
-5) Test configuration
-6) Launch AI chat interface
-7) Exit
+🤖 AI Configuration:
+  1) Configure Claude (Vertex AI)
+  2) Configure Gemini (Vertex AI)
+  3) Configure OpenAI
+
+🔐 GCP Management:
+  4) Authenticate with GCP
+  5) Switch Account
+  6) Manage Projects & APIs
+
+📦 CLI Tools:
+  7) Install/Manage Claude CLI
+  8) Install/Manage Gemini CLI
+
+📊 Status & Testing:
+  9) Show Configuration
+  10) Test Configuration
+
+💬 Usage:
+  11) Launch Chat Interface
+
+  0) Exit
 ```
 
 </details>
@@ -166,34 +234,58 @@ def reverse_linked_list(head):
 
 ## 📦 Installation
 
+### Automated Installation
+
+**All Platforms:**
+```bash
+git clone https://github.com/code-wiki/vertex-cli.git
+cd vertex-cli
+./install.sh  # Linux/macOS
+# OR
+bash install.sh  # Windows Git Bash
+```
+
+The installer will:
+- Detect your operating system
+- Install required dependencies (curl, jq, gcloud)
+- Configure scripts
+- Set up the environment
+
+### Manual Installation
+
 <table>
 <tr>
-<td width="50%">
-
-### Option 1: Run Directly
+<th width="50%">Unix/Linux/macOS</th>
+<th width="50%">Windows</th>
+</tr>
+<tr>
+<td valign="top">
 
 ```bash
 git clone https://github.com/code-wiki/vertex-cli.git
 cd vertex-cli
+chmod +x vertex-cli bin/*
 ./vertex-cli
 ```
 
-No installation needed. Just run.
-
 </td>
-<td width="50%">
+<td valign="top">
 
-### Option 2: Install Globally
-
+**Git Bash:**
 ```bash
-make install
+git clone https://github.com/code-wiki/vertex-cli.git
+cd vertex-cli
+bash vertex-cli
 ```
 
-Then use anywhere:
+**PowerShell:**
+```powershell
+.\vertex-cli.ps1
+```
 
-```bash
-vertex-cli
-vertex-chat
+**CMD:**
+```cmd
+vertex-cli.bat
 ```
 
 </td>
@@ -204,40 +296,94 @@ vertex-chat
 
 ## 🔧 Prerequisites
 
+### All Platforms
+- Git
+- Bash (included in Linux/macOS, Git Bash for Windows)
+- curl
+- jq (JSON processor)
+
+### For Claude & Gemini (Vertex AI)
+- GCP account with billing enabled
+- [gcloud CLI](https://cloud.google.com/sdk/docs/install)
+
+### For OpenAI
+- OpenAI API key
+
+---
+
+## Platform-Specific Setup
+
 <table>
 <tr>
-<th width="50%">For Claude & Gemini</th>
-<th width="50%">For OpenAI</th>
+<th>Linux (Ubuntu/Debian)</th>
+<th>Linux (CentOS/RHEL)</th>
 </tr>
 <tr>
 <td valign="top">
 
-• GCP account
-• [gcloud CLI](https://cloud.google.com/sdk/docs/install)
-• `jq` processor
-
 ```bash
-# macOS
-brew install jq google-cloud-sdk
+# Install dependencies
+sudo apt-get update
+sudo apt-get install -y curl jq
 
-# Ubuntu/Debian
-sudo apt-get install jq
+# Install gcloud SDK
 curl https://sdk.cloud.google.com | bash
+exec -l $SHELL
+gcloud init
 ```
 
 </td>
 <td valign="top">
 
-• OpenAI API key
-• `jq` processor
+```bash
+# Install dependencies
+sudo yum install -y curl jq
+
+# Install gcloud SDK
+curl https://sdk.cloud.google.com | bash
+exec -l $SHELL
+gcloud init
+```
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th>macOS</th>
+<th>Windows</th>
+</tr>
+<tr>
+<td valign="top">
 
 ```bash
-# macOS
-brew install jq
+# Install Homebrew (if needed)
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/\
+Homebrew/install/HEAD/install.sh)"
 
-# Ubuntu/Debian
-sudo apt-get install jq
+# Install dependencies
+brew install jq google-cloud-sdk
+
+# Initialize gcloud
+gcloud init
 ```
+
+</td>
+<td valign="top">
+
+**Install:**
+1. [Git Bash](https://git-scm.com/download/win)
+2. [Google Cloud SDK](https://cloud.google.com/sdk/docs/install#windows)
+3. [jq](https://stedolan.github.io/jq/download/)
+
+**Or use WSL:**
+```powershell
+wsl --install
+```
+
+Then follow Linux instructions in WSL.
 
 </td>
 </tr>
@@ -273,14 +419,22 @@ MODEL=claude-3-5-sonnet@20240620
 <tr>
 <td>
 
-`claude-3-5-sonnet@20240620` ⭐
-`claude-3-opus@20240229`
-`claude-3-haiku@20240307`
+**14 models available!** ⭐
+`claude-sonnet-4-6`
+`claude-opus-4-6`
+`claude-opus-4-5`
+`claude-haiku-4-5`
+`claude-sonnet-4-5`
+... and 9 more
+
+[📖 See all models](docs/CLAUDE_MODELS.md)
 
 </td>
 <td>
 
-`gemini-2.0-flash-exp` ⚡
+`gemini-2.5-flash` ⚡
+`gemini-2.5-pro`
+`gemini-2.0-flash-exp`
 `gemini-1.5-pro`
 `gemini-1.5-flash`
 
